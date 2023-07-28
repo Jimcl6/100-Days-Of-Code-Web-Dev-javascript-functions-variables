@@ -32,11 +32,27 @@ let job = {
 //     return age - 18;
 // }
 
+let adultYears;
+
+// function calculateAdultYears() {
+//     let adultYears = age - 18;
+// }
+// above code block will not work because if we were to call the "adultYears" variable outside of the function it would return an error. Therefore, only declare a variable
+// inside a function if that variable is to only be used inside that function.
+
+// FUN FACT:- In javascript we can declare variables with the same name that is outside of our javascript function.
+// e.g.:-
+// let adultYears <----- variable outside of the function.
+// function calculateAdultYears() {
+//    let adultYears = code-value;
+//
+// }
+
 function calculateAdultYears() {
     return age - 18;
 }
 
-let adultYears = calculateAdultYears();
+adultYears = calculateAdultYears();
 
 // -------------------------------------------------------------------------
 // Self code exercise section.
